@@ -1,6 +1,6 @@
 {
   "name": "cfget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " A node.js cli tool to bypass Cloudflare's anti-bot and get the page contents ",
   "main": "cfget.js",
   "scripts": {
@@ -16,6 +16,9 @@
     "url": "https://github.com/gnuns/cloudflare-get/issues"
   },
   "homepage": "https://github.com/gnuns/cloudflare-get#readme",
+  "bin": {
+    "cfget": "bin/cfget.bin.js"
+  },
   "dependencies": {
     "request": "^2.79.0",
     "zombie": "^5.0.5"

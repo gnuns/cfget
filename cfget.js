@@ -11,7 +11,7 @@ function cfget() {
   .then(function() {})
   .catch(function(error) {
     // code 502 is expected
-    browser.wait({ duration: 10000 });
+    browser.wait({ duration: 6000 });
   });
 
   browser.on('redirect', function(req, res) {
@@ -34,8 +34,11 @@ function cfget() {
       request(requesOptions, function(error, response) {
         if (error) return;
         console.log(response.body);
+        process.exit(1);
       });
-    });
+    })
+    .catch(function(){});
   });
 }
-cfget();
+
+module.exports = cfget;
