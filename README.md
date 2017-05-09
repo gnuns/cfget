@@ -7,3 +7,7 @@ It's pretty simple to use:
 npm install -g cfget
 cfget http://cloudflare.com
 ```
+
+
+### TODO
+- [ ] change zombie.js to nightmare.js
