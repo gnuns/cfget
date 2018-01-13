@@ -1,7 +1,7 @@
 {
   "name": "cfget",
-  "version": "1.0.1",
-  "description": " A node.js cli tool to bypass Cloudflare's anti-bot and get the page contents ",
+  "version": "2.0.0",
+  "description": " A lib and cli tool to bypass Cloudflare's anti-bot and get the page contents ",
   "main": "cfget.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
     "cfget": "bin/cfget.bin.js"
   },
   "dependencies": {
-    "request": "^2.79.0",
+    "got": "^8.0.2",
     "zombie": "^5.0.5"
   }
 }
